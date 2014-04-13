@@ -1,0 +1,19 @@
+{
+    "name": "everto/aanbieders-api-client",
+    "description": "Aanbieders.be API client.",
+    "keywords": ["aanbieders","api"],
+    "homepage": "http://apihelp.econtract.be/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evert Engelen",
+            "homepage": "https://github.com/Everto/aanbieders-api-client.git",
+            "email": "api_support@aanbieders.be"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
