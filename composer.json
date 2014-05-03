@@ -4,6 +4,7 @@
     "keywords": ["aanbieders","api"],
     "homepage": "http://apihelp.econtract.be/",
     "type": "library",
+    "version": "0.1.0",
     "license": "MIT",
     "authors": [
         {
@@ -12,7 +13,7 @@
             "email": "api_support@aanbieders.be"
         }
     ],
-    "minimum-stability": "dev", 
+    "minimum-stability": "stable", 
     "require": {
         "php": ">=5.3.0"
     },
