@@ -114,7 +114,7 @@ class Aanbieders {
 		// analyze product id's and build the url and query parameters
 		if ( $productid && is_array( $productid ) && ($number_of_product_ids = count( $productid )) > 0 )
 		{
-			if ( $number_of_product_ids == 1 )
+			if ( $number_of_product_ids == 1  && is_numeric( $productid[ 0 ] ))
 			{
 				$url = $this->host . "/products/" . $productid[ 0 ] . ".json";
 			}
