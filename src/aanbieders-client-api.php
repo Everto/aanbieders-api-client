@@ -100,7 +100,7 @@ class Aanbieders {
 
 		return $this->doCall( $url, $params, 'GET' );
 	}
-
+ 
 	/**
 	 *  Get a list of 1 or more products and related information
 	 *
