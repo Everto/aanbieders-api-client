@@ -161,7 +161,7 @@ class Aanbieders {
 	 * @param array $params array with parameters for suppliers
 	 * @return object:
 	 */
-	public function getSuppliers( $params) {
+	public function getSuppliers( $params ) {
 		
 		$url = $this->host . '/suppliers.json';
 		
@@ -169,6 +169,32 @@ class Aanbieders {
 		
 	}
 	
+	/**
+	 * Get list of product options based on given option IDs
+	 * @param array $params array with IDs of options
+	 * @return object:
+	 */
+	public function getOptions( $params ) {
+		
+		$url = $this->host . '/options.json';
+		
+		return $this->doCall( $url, $params, 'GET' );
+		
+	}
+
+	/**
+	 * Get list of product promotions based on given promotion IDs
+	 * @param array $params array with IDs of promotions
+	 * @return object:
+	 */
+	public function getPromotions( $params ) {
+		
+		$url = $this->host . '/promotions.json';
+		
+		return $this->doCall( $url, $params, 'GET' );
+		
+	}
+
 	/**
 	 * Generate a contract for your order
 	 * @param array $params array with all parameters you receive from the order API
