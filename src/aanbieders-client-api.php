@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Aanbieders API Class
  * This class is a wrapper for making a curl based request to the api of aanbieders.be
