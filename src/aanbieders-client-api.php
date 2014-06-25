@@ -181,6 +181,20 @@ class Aanbieders {
 		
 	}
 
+	
+	/**
+	 * Get list of affiliates based on given affiliate IDs
+	 * @param array $params array with IDs of affiliates
+	 * @return object:
+	 */
+	public function getAffiliates( $params ) {
+		
+		$url = $this->host . '/affiliates.json';
+		
+		return $this->doCall( $url, $params, 'GET' );
+		
+	}
+
 	/**
 	 * Get list of product promotions based on given promotion IDs
 	 * @param array $params array with IDs of promotions
