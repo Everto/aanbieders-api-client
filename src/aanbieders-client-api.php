@@ -401,9 +401,13 @@ class Aanbieders {
 		{
 			$ip = $_SERVER[ 'HTTP_X_FORWARDED_FOR' ];
 		}
-		else
+		elseif(isset($_SERVER[ 'REMOTE_ADDR' ])) 
 		{
 			$ip = $_SERVER[ 'REMOTE_ADDR' ];
+		} 
+		else 
+		{
+			$ip = '';
 		}
 
 		return $ip;
