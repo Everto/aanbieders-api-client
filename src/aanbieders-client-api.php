@@ -20,7 +20,7 @@ if ( !function_exists( 'json_decode' ) )
 class Aanbieders {
 
 	private $key, $secret;
-	private $host;
+	private $host, $abcid;
 
 	/*
 	 * valid options: json, object, array
@@ -59,6 +59,7 @@ class Aanbieders {
 		}
 
 		//check for/create a unique id for tracking purposes
+		$this->abcid = '';
 		if ( !headers_sent() )
 		{
 			if ( !isset( $_COOKIE[ 'abcid' ] ) )
@@ -69,10 +70,11 @@ class Aanbieders {
 			{
 				$this->abcid = $_COOKIE[ 'abcid' ];
 			}
+
+			//store cookie for 200 days
+			setcookie( 'abcid', $this->abcid, time() + 17280000, '/' );			
 		}
 
-		//store cookie for 200 days
-		setcookie( 'abcid', $this->abcid, time() + 17280000, '/' );
 	}
 
 	/**
