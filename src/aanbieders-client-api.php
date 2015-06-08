@@ -103,6 +103,20 @@ class Aanbieders {
 	}
  
 	/**
+	 * Compares products based on parameters
+	 *
+	 * @param	array $params	the required params to make a comparing
+	 * @param array  $comparisonId Id of the comparison to be read
+	 * @return array Array with comparing results
+	 */
+	public function readComparison( $params, $comparisonId ) {
+
+		$url = $this->host . "/comparison/view/{$comparisonId}.json";
+
+		return $this->doCall( $url, $params, 'GET' );
+	}
+	
+	/**
 	 *  Get a list of 1 or more products and related information
 	 *
 	 * @param array  $params Array of parameters
