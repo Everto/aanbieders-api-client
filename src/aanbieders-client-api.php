@@ -425,6 +425,17 @@ class Aanbieders {
 		return $this->doCall( $url, $params, 'GET' );
 	}
 
+	function getDualfuelpack( $electricity_id, $gas_id ) {
+
+		$params[ 'electricity_id' ] = $electricity_id;
+		$params[ 'gas_id' ] = $gas_id;
+
+		$url = $this->host . '/dualfuelpack.json';
+
+		return $this->doCall( $url, $params, 'GET' );
+	}
+
+
 	function multi_implode( $glue, $array ) {
 		$ret = '';
 
