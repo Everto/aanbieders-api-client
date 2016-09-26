@@ -2,9 +2,9 @@
     "name": "everto/aanbieders-api-client",
     "description": "Aanbieders.be API client.",
     "keywords": ["aanbieders","api"],
-    "homepage": "http://apihelp.econtract.be/",
+    "homepage": "https://apihelp.econtract.be/",
     "type": "library",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "license": "MIT",
     "authors": [
         {

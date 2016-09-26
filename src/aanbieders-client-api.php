@@ -2,7 +2,7 @@
 /*
  * Aanbieders API Class
  * This class is a wrapper for making a curl based request to the api of aanbieders.be
- * Documentation for the API, see: http://apihelp.econtract.be/
+ * Documentation for the API, see: https://apihelp.econtract.be/
  *
  * Contact for support:
  * Aanbieders API Support <api_support@aanbieders.be>
@@ -55,7 +55,7 @@ class Aanbieders {
 		}
 		else
 		{
-			$this->host = 'http://api.econtract.be';
+			$this->host = 'https://api.econtract.be';
 		}
 
 		//check for/create a unique id for tracking purposes
@@ -217,6 +217,19 @@ class Aanbieders {
 	public function getPromotions( $params ) {
 		
 		$url = $this->host . '/promotions.json';
+		
+		return $this->doCall( $url, $params, 'GET' );
+		
+	}
+
+	/**
+	 * Get list of the latest reviews
+	 * @param array $params 
+	 * @return object:
+	 */
+	public function getReviews( $params ) {
+		
+		$url = $this->host . '/reviews.json';
 		
 		return $this->doCall( $url, $params, 'GET' );
 		
