@@ -4,7 +4,7 @@
     "keywords": ["aanbieders","api"],
     "homepage": "https://apihelp.econtract.be/",
     "type": "library",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "license": "MIT",
     "authors": [
         {
