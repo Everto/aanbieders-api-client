@@ -1,23 +1,28 @@
 {
-    "name": "everto/aanbieders-api-client",
+    "name": "econtract/aanbieders-api-client",
     "description": "Aanbieders.be API client.",
-    "keywords": ["aanbieders","api"],
+    "keywords": [
+        "aanbieders",
+        "api"
+    ],
     "homepage": "https://apihelp.econtract.be/",
     "type": "library",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "license": "MIT",
     "authors": [
         {
-            "name": "Evert Engelen",
-            "homepage": "https://github.com/Everto/aanbieders-api-client.git",
-            "email": "api_support@aanbieders.be"
+            "name": "e-Contract BVBA",
+            "homepage": "https://github.com/econtract/aanbieders-api-client.git",
+            "email": "it@aanbieders.be"
         }
     ],
-    "minimum-stability": "stable", 
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.3.0"
     },
-    "autoload": {    	
-        "files": ["src/aanbieders-client-api.php"]
+    "autoload": {
+        "files": [
+            "src/aanbieders-client-api.php"
+        ]
     }
 }
