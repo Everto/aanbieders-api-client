@@ -48,10 +48,9 @@ class Aanbieders {
         $this->key = $config[ 'key' ];
         $this->secret = $config[ 'secret' ];
 
-        if( $config[ 'staging' ] ) {
-            $this->host = 'http://eco-api.aanbieders.staging-001.econtract.prvw.eu';
-        } else {
-            $this->host = 'https://api.econtract.be';
+        $this->host = 'https://api.econtract.be';
+        if( array_key_exists('host', $config) ) {
+            $this->host = $config[ 'host' ];
         }
 
         //check for/create a unique id for tracking purposes
